@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show Movie Details</title>
+</head>
+<body>
+    {% for i in data %}
+    <img src="/static/images/{{ i.poster}}" height="350px" width="350px" style="border-radius: 100px">
+    <h1>{{ i.moviename}}</h1>
+    <h1>{{ i.heroname }}</h1>
+    <h1>{{ i.heroinename }}</h1>
+    <h1>{{ i.releasedate}}</h1>
+    <h1>{{ i.directorname }}</h1>
+    {% endfor %}
+</body>
+</html>
